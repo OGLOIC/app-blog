@@ -1,0 +1,23 @@
+### Create a new post
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+  "title": "My First Blog",
+  "content": "This is the content of my blog"
+}
+
+### Get all posts
+GET http://localhost:3000/posts
+
+### Update a post (replace post ID)
+PUT http://localhost:3000/posts/post_1
+Content-Type: application/json
+
+{
+  "title": "Updated Title",
+  "content": "Updated content"
+}
+
+### Delete a post
+DELETE http://localhost:3000/posts/post_1
